@@ -37,7 +37,8 @@
         <div class="total-price">Rs.0</div>
       </div>
 
-      <button class="btn-buy">Place Order</button>
+      <!-- <button class="btn-buy">Place Order</button> -->
+      <a href="#" name="cart" class="add-cart">Ceckout</a>
 
       <ion-icon name="close" id="cart-close"></ion-icon>
 
@@ -64,7 +65,18 @@
         <!-- <span class="food-price">Rs.40</span> -->
         <span class="food-price">Rs.10.00</span><br>
        <!-- <ion-icon name="cart" class="add-cart"></ion-icon> -->
-       <a href="#" name="" class="add-cart">add to cart</a>
+       <!-- <a href="https://rzp.io/l/M7X5VKGfq" name="" class="add-cart">add to cart</a> -->
+
+       <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_NS2yEWABK3rdIZ/view" data-text="Pay Now" data-color="#528FF0" data-size="small">
+        <script>
+          (function(){
+            var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+            if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+            s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+            rzp && rzp.init && rzp.init()}})();
+        </script>
+      </div>
+          
       </div>
 
 
@@ -76,7 +88,19 @@
         </div>
         <h2 class="food-title">Black Tea</h2><br>
         <span class="food-price">Rs.10.00</span><br>
-        <a href="#" name="cart" class="add-cart">add to cart</a>
+        <!-- <a href="#" name="cart" class="add-cart">add to cart</a> -->
+
+
+        <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_NS3IjGWirZBeou/view" data-text="Pay Now" data-color="#528FF0" data-size="small">
+          <script>
+            (function(){
+              var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+              if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+              s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+              rzp && rzp.init && rzp.init()}})();
+          </script>
+        </div>
+            
       </div>
 
   
@@ -443,11 +467,12 @@ function updateTotal()
 
 
 }
+</script>
 
-
+<form>
+  <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NS2eK9Q6RRYqPC" async> 
   </script>
-
-  
+   </form>  
   
 </body>
 </html>

@@ -300,3 +300,18 @@ section {
 .btn:hover {
     background: #130f40;
 }
+
+.footer {
+    background: #f7f7f7;
+}     
+
+.footer .bottom {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer .bottom .credit {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem;
+}

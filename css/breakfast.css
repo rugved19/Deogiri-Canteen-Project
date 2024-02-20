@@ -216,7 +216,8 @@ h2.title{
   position: fixed;
   top: 0;
   right: -100%;
-  width: 400px;
+  /* width: 400px; */
+  width: 300px;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -275,6 +276,7 @@ h2.title{
 }
 
 .cart-price{
+  font-size: 1rem;
   font-weight: 500;
 }
 
